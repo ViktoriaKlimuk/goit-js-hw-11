@@ -53,9 +53,11 @@ input{
 }
 
 .loading{
-    width: 30px;
-    color: rgb(59, 59, 195);
-    padding: 10px;
-    margin: 0 auto;
+    width: 115px;
+    background-color: #3b3bc3;
     border-radius: 10px;
+    margin: 0 auto 20px;
+    padding: 10px;
+    color: white;
+    border: currentColor;
 }
