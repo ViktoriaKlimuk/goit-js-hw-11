@@ -4,7 +4,6 @@ const form = document.querySelector("form");
 //
 import { fetchHints } from "./js/pixabay";
 import{markupCard} from "./js/markup";
-import {lightBox } from "./js/lightBox";
 import {success, warning, info, error, loading, reLoading} from "./js/notiflix";
 
 
@@ -56,7 +55,6 @@ async function handleSub(event) {
         error(error.message)
     }
 
-    lightBox.refresh();
 }
 
 async function handleClick(event) {
@@ -74,7 +72,6 @@ async function handleClick(event) {
     } catch (error) {
         error(error.message)
     }
-    lightBox.refresh();
 }
 
 body.append(form);
