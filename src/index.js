@@ -42,7 +42,7 @@ async function handleSub(event) {
             return warning()
         }
 
-        btnLoad.style.display ="flex";
+        btnLoad.style.display ="block";
         success(totalHits);
 
         gallery.insertAdjacentHTML('beforeend', markupCard(hits));
