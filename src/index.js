@@ -1,5 +1,7 @@
 const body = document.querySelector("body");
 const form = document.querySelector("form");
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 //
 import { fetchHints } from "./js/pixabay";
@@ -11,7 +13,7 @@ const btnLoad = document.createElement("button");
 btnLoad.classList.add("loading");
 btnLoad.type = "button";
 
-const gallery = document.querySelector(".gallery")
+let gallery = document.querySelector(".gallery")
 
 let page = 1;
 let searchQuery ="";
@@ -56,6 +58,7 @@ async function handleSub(event) {
     }
 
 }
+gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
 
 async function handleClick(event) {
     event.preventDefault();
