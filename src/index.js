@@ -4,7 +4,7 @@ const form = document.querySelector("form");
 //
 import { fetchHints } from "./js/pixabay";
 import{markupCard} from "./js/markup";
-import { lightBox } from "./js/simpleLightBox";
+import { lightBox } from "./js/lightBox";
 import {success, warning, info, error, loading, reLoading} from "./js/notiflix";
 
 const btnLoad = document.createElement("button");
