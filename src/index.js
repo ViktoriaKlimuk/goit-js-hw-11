@@ -56,9 +56,9 @@ async function handleSub(event) {
     } catch (error) {
         error(error.message)
     }
-
+    gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
 }
-gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
+
 
 async function handleClick(event) {
     event.preventDefault();
@@ -75,6 +75,7 @@ async function handleClick(event) {
     } catch (error) {
         error(error.message)
     }
+    gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
 }
 
 
