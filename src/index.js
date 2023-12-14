@@ -1,7 +1,5 @@
 const body = document.querySelector("body");
 const form = document.querySelector("form");
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 
 //
 import { fetchHints } from "./js/pixabay";
@@ -56,7 +54,7 @@ async function handleSub(event) {
     } catch (error) {
         error(error.message)
     }
-    gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
+    
 }
 
 
@@ -75,7 +73,6 @@ async function handleClick(event) {
     } catch (error) {
         error(error.message)
     }
-    gallery = new SimpleLightbox(".gallery__item a", { captionsData: "alt", captionDelay: 250, overplayOpacity: 0.5 });
 }
 
 
