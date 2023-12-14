@@ -10,6 +10,7 @@ import {success, warning, info, error, loading, reLoading} from "./js/notiflix";
 const btnLoad = document.createElement("button");
 btnLoad.classList.add("loading");
 btnLoad.type = "button";
+gallery.append(btnLoad)
 
 let gallery = document.querySelector(".gallery")
 
