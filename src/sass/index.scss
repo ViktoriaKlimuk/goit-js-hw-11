@@ -12,7 +12,8 @@ a{
     background-color: rgb(59, 59, 180);
    padding: 20px;
    display: flex;
-   justify-content: center;    display: flex;
+   justify-content: center;   
+    display: flex;
    flex-wrap: wrap;
    flex-direction: row;
 
@@ -49,4 +50,12 @@ input{
     color: black;
     padding: 6px;
 
+}
+
+.loading{
+    width: 30px;
+    color: rgb(59, 59, 195);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
 }
