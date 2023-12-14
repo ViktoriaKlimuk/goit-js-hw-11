@@ -74,5 +74,4 @@ async function handleClick(event) {
     }
 }
 
-body.append(form);
 
